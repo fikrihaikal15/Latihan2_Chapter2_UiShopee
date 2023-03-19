@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/scan"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/scan"
+                android:backgroundTint="#717171" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#717171" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/wallet"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/wallet" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#717171" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coin"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/coin" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#717171" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/transfer"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/transfer" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/rp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvGratis"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Gratis Ongkir dan Voucher"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/rp"
+        app:layout_constraintStart_toStartOf="@id/rp"
+        app:layout_constraintEnd_toEndOf="@id/rp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/pulsa"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pulsa"
+        app:layout_constraintStart_toEndOf="@id/rp"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPulsa"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Pulsa, Tagihan, dan Tiket"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/pulsa"
+        app:layout_constraintStart_toStartOf="@id/pulsa"
+        app:layout_constraintEnd_toEndOf="@id/pulsa"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shoopeMall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shoope_mall"
+        app:layout_constraintStart_toEndOf="@id/pulsa"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvShoopeMall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Shoope Mall"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/shoopeMall"
+        app:layout_constraintStart_toStartOf="@id/shoopeMall"
+        app:layout_constraintEnd_toEndOf="@id/shoopeMall"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shoopeSekitar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shoope_sekitar"
+        app:layout_constraintStart_toEndOf="@id/shoopeMall"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvShoopeSekitar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ShoopePay Sekitarmu"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/shoopeSekitar"
+        app:layout_constraintStart_toStartOf="@id/shoopeSekitar"
+        app:layout_constraintEnd_toEndOf="@id/shoopeSekitar"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shoopeBarokah"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shoope_berkah"
+        app:layout_constraintStart_toEndOf="@id/shoopeSekitar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvShoopeBarokah"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Shoope Barokah"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/shoopeBarokah"
+        app:layout_constraintStart_toStartOf="@id/shoopeBarokah"
+        app:layout_constraintEnd_toEndOf="@id/shoopeBarokah"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shoopeGames"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shoope_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGratis"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvShoopeGame"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Shoope Games"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/shoopeGames"
+        app:layout_constraintStart_toStartOf="@id/shoopeGames"
+        app:layout_constraintEnd_toEndOf="@id/shoopeGames"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shoopeFood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shoope_food"
+        app:layout_constraintStart_toEndOf="@id/shoopeGames"
+        app:layout_constraintTop_toBottomOf="@+id/tvPulsa"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvShoopeFood"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ShoopeFood"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/shoopeFood"
+        app:layout_constraintStart_toStartOf="@id/shoopeFood"
+        app:layout_constraintEnd_toEndOf="@id/shoopeFood"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shoopePilih"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/shoope_pilih"
+        app:layout_constraintStart_toEndOf="@id/shoopeFood"
+        app:layout_constraintTop_toBottomOf="@+id/tvShoopeMall" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvShoopePilih"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Shoope Pilih Lokal"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/shoopePilih"
+        app:layout_constraintStart_toStartOf="@id/shoopePilih"
+        app:layout_constraintEnd_toEndOf="@id/shoopePilih"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/spayLater"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/spay_later"
+        app:layout_constraintStart_toEndOf="@id/shoopePilih"
+        app:layout_constraintTop_toBottomOf="@+id/tvShoopeSekitar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSpayLater"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="SpayLater"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/spayLater"
+        app:layout_constraintStart_toStartOf="@id/spayLater"
+        app:layout_constraintEnd_toEndOf="@id/spayLater"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lainnya"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/lainnya"
+        app:layout_constraintStart_toEndOf="@id/spayLater"
+        app:layout_constraintTop_toBottomOf="@+id/tvShoopeBarokah" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLainnya"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Lihat Semua"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/lainnya"
+        app:layout_constraintStart_toStartOf="@id/lainnya"
+        app:layout_constraintEnd_toEndOf="@id/lainnya"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/seabank"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/seabank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShoopePilih" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
